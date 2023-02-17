@@ -14,14 +14,17 @@
     "joi": "^17.7.1",
     "jquery": "^3.6.3",
     "jwt-decode": "^3.1.2",
+    "multiselect-react-dropdown": "^2.0.25",
     "node-sass": "^7.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-infinite-scroll-component": "^6.1.0",
     "react-js-pagination": "^3.0.3",
+    "react-rating": "^2.0.5",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
+    "react-select": "^5.7.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
