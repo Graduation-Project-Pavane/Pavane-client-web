@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+
+.row > * {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+:root {
+  --mainColor: #ffa300;
+  --secondaryColor: #242424;
+  --lightGray: #eeeeee;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  transition: background-color 5000s ease-in-out 0s;
+}
