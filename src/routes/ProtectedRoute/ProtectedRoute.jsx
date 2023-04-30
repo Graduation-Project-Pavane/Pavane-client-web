@@ -11,9 +11,11 @@ export default function ProtectedRoute() {
 
   if (auth.customerToken) {
     return <CustomerLayout />
-  } else if (window.location.pathname === '/sign-up') {
-    return <SignUp />
   } else {
-    return <Navigate to="/loginCustomer" />;
+    if (window.location.pathname === '/sign-up') {
+      return <SignUp />
+    } else {
+      return <Navigate to="/loginCustomer" />;
+    }
   }
 }

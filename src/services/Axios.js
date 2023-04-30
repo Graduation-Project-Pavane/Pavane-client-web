@@ -16,6 +16,10 @@ Axios.interceptors.request.use(async (req) => {
     console.log("loggingig on");
     return req;
   }
+  if (req.url === "addCustomer") {
+    console.log("loggingig on");
+    return req;
+  }
 
   //auth state from redux 
   let auth = store.getState().auth;
@@ -38,7 +42,7 @@ Axios.interceptors.request.use(async (req) => {
 
   if (isTokenExpired) {
     console.log(req, "expired token");
-    localStorage.removeItem("AdminToken");
+    localStorage.removeItem("customerToken");
     store.dispatch(authActions.logout());
 
     return Promise.reject("you are unautherised");
